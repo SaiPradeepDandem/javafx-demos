@@ -1,0 +1,88 @@
+/*******************************************************************************
+*                                                                             *
+* Dialog CSS                                                                  *
+*                                                                             *
+******************************************************************************/
+.dialog-title {
+    -fx-fill: white;
+    -fx-font-style: oblique;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow( one-pass-box , rgba(75,75,75,0.8) , 0, 0.0 , 2, 2);
+}
+.dialog-message {
+    -fx-fill: crimson;
+    -fx-font-style: oblique;
+    -fx-font-size: 12px;
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 0, 0.0 , 1, 1);
+}
+.dialog {
+    -fx-base: #505359;
+    -fx-background: #505359;
+    -fx-spacing: 10;
+    -fx-padding: 10 10 10 10;
+    -fx-background-color:
+        linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#020b02, #3a3a3a),
+        linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),
+        linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),
+        linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);
+      -fx-alignment: center;
+      -fx-border-width: 3;
+    -fx-border-color: 
+      linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%) 
+            linear-gradient(#686868 10%, white 40%, #343534 90%, #757575 100%)
+            linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%)
+            linear-gradient(#686868 10%, white 40%, #343534 90%, #757575 100%);
+      -fx-border-insets: 1 1 1 1;
+      -fx-border-radius: 8 8 8 8;
+      -fx-background-radius: 10 10 10 10;
+}
+/*******************************************************************************
+ *                                                                             *
+ * Button                                                                      *
+ *                                                                             *
+ ******************************************************************************/
+.button {
+    -fx-background-color:
+        #a6b5c9,
+        linear-gradient(#303842 0%, #3e5577 20%, #375074 100%),
+        linear-gradient(#768aa5 0%, #849cbb 5%, #5877a2 50%, #486a9a 51%, #4a6c9b 100%);
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 0;
+    -fx-padding: 7 30 7 30;
+    -fx-font-size: 12px;
+    -fx-text-fill: white;
+}
+.button Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 0, 0.0 , 0 , -1 );
+}
+.button:focused {
+    -fx-color: -fx-focused-base;
+    -fx-effect: dropshadow( one-pass-box , black, 0, 0.0 , 2, 2);
+    -fx-background-insets: -1.4, 0, 1, 2;
+}
+.button:hover {
+    -fx-color: -fx-focused-base;
+    -fx-background-color:
+        #b6c5d9,
+        linear-gradient(#404852 0%, #4e6587 20%, #476084 100%),
+        linear-gradient(#869ab5 0%, #94accb 5%, #6887b2 50%, #587aaa 51%, #5a7cab 100%);
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 0, 0.0 , 2, 2);
+    -fx-background-insets: -1.4, 0, 1, 2;
+    -fx-background-radius:  6.4, 5, 4, 3;
+}
+.button:armed {
+    -fx-color: -fx-pressed-base;
+}
+.button:default {
+    -fx-base: -fx-accent;
+}
+.button:cancel {
+     -fx-base: -fx-accent;
+ }
+.button:disabled {
+    -fx-opacity: -fx-disabled-opacity;
+}
+.button:show-mnemonics .mnemonic-underline {
+    -fx-stroke: -fx-text-fill;
+}

@@ -1,0 +1,106 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Andhra Pradesh Polygon</title>
+    <style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
+// This example creates a simple polygon representing the Bermuda Triangle.
+
+var map ;
+
+function initialize() {
+  var mapOptions = {
+    zoom: 5,
+    center: new google.maps.LatLng(21.166484 , 78.497314),
+    mapTypeId: google.maps.MapTypeId.TERRAIN
+  };
+
+  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+}
+
+var overlays = {};
+var infoWindow;
+
+ function showOverlay(name, jsonStr){
+ 	var jObj = JSON.parse(jsonStr);
+ 	var stateCoords = [];
+ 	for(var lat in jObj){
+ 		stateCoords.push(new google.maps.LatLng(parseFloat(lat) , parseFloat(jObj[lat])));
+ 	}
+ 	
+ 	 // Construct the polygon.
+  indiaPolygon = new google.maps.Polygon({
+    paths: stateCoords,
+    strokeColor: '#FF0000',
+    strokeOpacity: 0.8,
+    strokeWeight: 1,
+    fillColor: '#FF0000',
+    fillOpacity: 0.35
+  });
+
+  overlays[name] = indiaPolygon;
+  indiaPolygon.setMap(map);
+  
+  // Add a listener for the click event.
+  google.maps.event.addListener(indiaPolygon, 'click', showArrays);
+
+  infoWindow = new google.maps.InfoWindow();
+  
+ }
+ 
+ function clearOverlay(name){
+ 	overlays[name].setMap(null);
+ 	overlays[name] = null;
+ 	delete overlays[name];
+ }
+ 
+ function highlightOverlay(name){
+ 	var myPolygon = overlays[name];
+ 	if(myPolygon!=null && myPolygon!=undefined){
+ 		myPolygon.setOptions({fillColor: '#FF00FF'});
+ 	}
+ }
+  function dehighlightOverlay(name){
+ 	var myPolygon = overlays[name];
+ 	if(myPolygon!=null && myPolygon!=undefined){
+ 		myPolygon.setOptions({fillColor: '#FF0000'});
+ 	}
+ }
+ 
+function showArrays(event) {
+
+  // Since this polygon has only one path, we can call getPath()
+  // to return the MVCArray of LatLngs.
+  var vertices = this.getPath();
+
+  var contentString = '<b>Andhra Pradesh</b><br>' +
+      '<br>' + event.latLng.lat() + ',' + event.latLng.lng() +
+      '<br>';
+
+  // Replace the info window's content and position.
+  infoWindow.setContent(contentString);
+  infoWindow.setPosition(event.latLng);
+
+  infoWindow.open(map);
+}
+ 
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+  </body>
+</html>
+

@@ -1,0 +1,11 @@
+.my-btn {
+    -fx-padding: 5 26 5 10;
+    -fx-border-image-source: url("../images/search_button.png");
+    -fx-border-image-slice: 4 4 4 4 fill;
+    -fx-border-image-width: 4 4 4 4;
+    -fx-border-image-insets: 0;
+    -fx-border-image-repeat: stretch;
+    -fx-background-color: null !important;
+    -fx-text-fill:white;
+    -fx-font-weight:bold;
+}

@@ -1,0 +1,50 @@
+.root {
+    -fx-background-color: radial-gradient(center 50% 50%, radius 60%, reflect, #ADFF2F, black );
+}
+ 
+.border-line {
+    -fx-stroke: yellow;
+    -fx-stroke-width: 1;
+    -fx-fill: null;
+}
+ 
+.bull-style {
+    -fx-stroke: green;
+    -fx-stroke-type: inside;
+}
+ 
+.bulls-eye-style {
+    -fx-stroke: red;
+    -fx-stroke-type: inside;
+}
+ 
+.text-surround {
+    -fx-fill: yellow;
+    -fx-font-family: Verdana;
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+}
+ 
+.double-triple-style-red {
+    -fx-fill: red;
+    -fx-stroke: yellow;
+    -fx-stroke-width: 1;
+}
+ 
+.double-triple-style-green {
+    -fx-fill: green;
+    -fx-stroke: yellow;
+    -fx-stroke-width: 1;
+}
+ 
+.field-style-dark {
+    -fx-fill: black;
+    -fx-stroke: yellow;
+    -fx-stroke-width: 1;
+}
+ 
+.field-style-light {
+    -fx-fill: lemonchiffon;
+    -fx-stroke: yellow;
+    -fx-stroke-width: 1;
+}

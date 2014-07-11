@@ -1,0 +1,36 @@
+@{S_Title} @{S_Name} @{S_FirstNames}
+@{S_Hospital}
+@{S_Street_NB}
+@{S_PostalCode} @{S_Village}
+@{S_NIHII}
+
+		
+                                                                                    Dr @{R_FirstNames} @{R_Name}
+                                                                                    @{R_Street_NB}
+                                                                                    @{R_PostalCode} @{R_Village}
+
+Geachte collega,
+
+Betreft patiënt:
+@{P_I_FirstNames} @{P_I_Name} @{P_I_Sex} @{P_I_DOB}
+@{CL_Header}
+
+Voorgeschiedenis:
+@{CL_E_Active}
+
+Actieve Medicatie:
+@{P_M_Active}
+
+Nieuwe medicatie:
+@{CL_C_Medication}
+
+Anannese:
+
+Klinisch onderzoek:
+
+Conclusie:
+@{CL_C_Conclusion}
+
+
+Met collegiale groeten,
+@{S_Title} @{S_FirstName} @{S_Fam_Name}

@@ -1,0 +1,76 @@
+/**   
+*  This file is part of SimpleCalender.
+    
+*  SimpleCalender is free software: you can redistribute it and/or modify   
+*  it under the terms of the GNU General Public License as published by   
+*  the Free Software Foundation, either version 3 of the License, or   
+*  (at your option) any later version.
+     
+*  SimpleCalender is distributed in the hope that it will be useful,   
+*  but WITHOUT ANY WARRANTY; without even the implied warranty of   
+*  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the   
+*  GNU General Public License for more details.
+
+*  <http://www.gnu.org/licenses/>.
+     
+*/  
+#DemoLabel {
+	-fx-font-size: 36px;
+	-fx-text-fill: salmon;
+}
+#DatepickerArrow {
+	-fx-fill: gray;
+	-fx-stroke: gray;
+}
+#DatepickerArrow:hover {
+	-fx-fill: black;
+	-fx-stroke: black;
+}
+#DatePicker {
+	-fx-background-color: linear-gradient(to bottom, white, wheat);
+    -fx-border-color: black;
+}
+#DatepickerDayCell {
+	-fx-background-color: transparent;
+	-fx-border-radius: 4;
+	-fx-spacing: 0;
+}
+#DatepickerDayCell:hover {
+	-fx-background-color: azure;
+	-fx-border-color: royalblue;
+	-fx-border-radius: 3;
+	-fx-text-fill: royalblue;
+}
+#DatepickerDayCell .datepicker-today-cell {
+    -fx-background-color: lightsteelblue;
+   	-fx-border-radius: 3;
+   	-fx-border-style: segments(2,2);
+   	-fx-border-color: royalblue;
+    -fx-text-fill: royalblue;
+	-fx-font-size: 12px;
+}
+.datepicker-weekday-row {
+    -fx-background-color: linear-gradient(to bottom, gray, lightgray, lightgray, lightgray, gray);
+    -fx-text-fill: black;
+	-fx-font-size: 12px;
+}
+.datepicker-monthyear-row {
+	-fx-background-color: linear-gradient(to bottom, beige, lightsalmon, beige); 
+	-fx-text-fill: black;
+	-fx-font-size: 12px;
+}
+
+.datepicker-othermonth-cell {
+   	-fx-border-radius: 4;
+    -fx-text-fill: gray;
+	-fx-font-size: 12px;
+}
+
+#CalenderButton {
+    -fx-font-size: 14px;
+	-fx-background-image: url("calender_icon.png");
+	-fx-background-color: null;
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+}
+

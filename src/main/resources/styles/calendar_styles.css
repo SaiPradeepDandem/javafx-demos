@@ -1,0 +1,269 @@
+/*******************************************************************************
+ *                                                                             *
+ * FX Calendar Common                                                          *
+ * @author : sai.dandem                                                        *
+ ******************************************************************************/
+
+.fx-calendar{
+	-fx-skin: "com.ezest.javafx.fxcalendar.skin.FXCalendarSkin";
+	-fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 0 5 0 0, 0 5 0 0, 0 4 0 0, 0 3 0 0;
+    -fx-padding: 0.0em 0.5em 0.0em 0.0em; /* 0 6 0 0 */
+}
+
+.fx-datepicker{
+	-fx-skin: "com.ezest.javafx.fxcalendar.skin.DatePickerSkin";
+}
+
+.fx-calendar-arrow{
+	/*padding determines the size of the arrow; This should match the design size in the SVG */
+    -fx-padding: 0.166667em 0.333333em 0.166667em 0.333333em; /* 2 3.5 2 3.5 */
+    -fx-shape: "M 0 0 h 7 l -3.5 4 z";
+}
+
+.calendarButton {
+    -fx-skin: "com.sun.javafx.scene.control.skin.ButtonSkin";
+    -fx-background-color: -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-insets:  0, 1, 2;
+    -fx-background-radius:  5, 4, 3;
+    -fx-padding: 0.166667em 0.833333em 0.25em 0.833333em; /* 2 10 3 10 */
+    -fx-text-fill: -fx-text-base-color;
+    -fx-font-size: 1.0em;	
+ 	-fx-font-family: verdana,arial,helvetica,tahoma,sans-serif;
+    -fx-alignment: CENTER;
+    -fx-graphic-vpos: CENTER;
+    -fx-cursor:hand;
+}
+
+.calendarButton:focused {
+    -fx-color: -fx-focused-base;
+    -fx-background-color: -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius:  5, 4, 3;
+}
+
+.calendarButton:hover {
+    -fx-color: -fx-hover-base;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Date Input Field Styling                                                    *
+ *                                                                             *
+ ******************************************************************************/
+
+.dateTextField {
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 1 3 1 3;
+    -fx-background-radius: 0;
+}
+
+.dateTextField:focused {
+    -fx-background-color: #FFFFFF;
+}
+
+.calendar-image{
+	-fx-background-color: #FFFFFF;
+	-fx-background-radius: 2 2 0 0;
+	-fx-border-radius: 2 2 0 0;
+	-fx-border-color: #7792B7; 
+    -fx-border-width: 0.166667em 0.062222em 0.062222em 0.062222em; 
+    -fx-cursor:hand;
+}
+
+.calendar-image-line{
+	-fx-stroke: #C0C0C0;
+    -fx-stroke-width: 0.062222em;
+}
+
+.calendar-image-circle{
+	-fx-stroke: #000000;
+	-fx-fill: transparent;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Base Navigator                                                              *
+ *                                                                             *
+ ******************************************************************************/
+
+.fx-calendar-navigator{
+	-fx-background-color: linear-gradient(to bottom, derive(-fx-base,8%) 0%, derive(-fx-base,4%) 25%, derive(-fx-base,0%) 50%, derive(-fx-base,-2%) 98%, derive(-fx-base,-5%) 100%);
+	-fx-border-width: 0.043333em 0.043333em 0.0em 0.043333em;
+	-fx-border-color: derive(-fx-base,10%) derive(-fx-base,10%) transparent derive(-fx-base,10%);
+}
+
+.fx-calendar-navigator-label{
+	-fx-text-fill: #FFFFFF;
+	-fx-graphic-text-gap:5px;
+	-fx-content-display:right;
+	-fx-cursor:hand;
+	-fx-font-size: 0.916667em;	
+ 	-fx-font-family: verdana,arial,helvetica,tahoma,sans-serif;
+}
+
+.fx-calendar-navigator-btn{
+	-fx-fill: linear-gradient(to bottom, derive(-fx-base,40%) 0%, derive(-fx-base,20%) 25%, derive(-fx-base,0%) 50%, derive(-fx-base,-2%) 98%, derive(-fx-base,-5%) 100%);
+	-fx-stroke-width: 0.043333em 0.043333em 0.0em 0.043333em;
+	-fx-stroke: derive(-fx-base,10%);
+	-fx-arc-height:3.5;
+	-fx-arc-width:3.5;
+}
+.fx-calendar-navigator-btnGrp {
+	-fx-opacity:.8;
+	-fx-cursor:hand;
+}
+
+.fx-calendar-navigator-btnGrp:hover {
+	-fx-opacity:1;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Base Week Header                                                            *
+ *                                                                             *
+ ******************************************************************************/
+
+.fx-calendar-weekpane{
+	-fx-background-color: linear-gradient(to bottom, derive(-fx-base,150%) 0%, derive(-fx-base,140%) 25%, derive(-fx-base,130%) 50%, derive(-fx-base,120%) 98%, derive(-fx-base,115%) 100%);
+	-fx-border-width: 0.0em 0.043333em 0.0em 0.043333em;
+	-fx-border-color: transparent derive(-fx-base,10%) transparent derive(-fx-base,10%);
+}
+
+.fx-calendar-weektext{
+ 	-fx-fill : derive(-fx-base,10%);
+ 	-fx-font-size: 0.916667em;	
+ 	-fx-font-family: verdana,arial,helvetica,tahoma,sans-serif;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Base Desk                                                                   *
+ *                                                                             *
+ ******************************************************************************/
+
+.fx-calendar-desk{
+	-fx-background-color: white;
+	-fx-border-width: 0.043333em 0.043333em 0.043333em 0.043333em;
+	-fx-border-color: derive(-fx-base,25%) derive(-fx-base,10%) derive(-fx-base,25%) derive(-fx-base,10%);
+}
+
+.fx-calendar-datetext{
+	-fx-font-size: 0.916667em;	
+ 	-fx-font-family: verdana,arial,helvetica,tahoma,sans-serif;
+}
+
+.fx-calendar-basic-datecell{
+	-fx-background-color: transparent;
+	-fx-cursor:hand;
+}
+
+.fx-calendar-basic-datecell:focused{
+	-fx-border-color: -fx-base;
+	-fx-border-style: dashed;
+}
+
+.fx-calendar-basic-datecell-selected{
+	-fx-border-color: #8B0000;
+	-fx-background-color: derive(-fx-base,120%);
+}
+
+.fx-calendar-basic-datecell:hover{
+	-fx-background-color: derive(-fx-base,140%);
+}
+
+.fx-calendar-datetext{
+	-fx-fill : black;
+	-fx-cursor:hand;
+}
+
+.fx-calendar-datetext:disabled{
+	-fx-fill : #AAAAAA;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Base Footer                                                                 *
+ *                                                                             *
+ ******************************************************************************/
+
+.fx-calendar-footer{
+	-fx-background-color: linear-gradient(to bottom, derive(-fx-base,150%) 0%, derive(-fx-base,140%) 25%, derive(-fx-base,130%) 50%, derive(-fx-base,120%) 98%, derive(-fx-base,115%) 100%);
+	-fx-border-width: 0.0em 0.043333em 0.043333em 0.043333em;
+	-fx-border-color: transparent derive(-fx-base,10%) derive(-fx-base,10%) derive(-fx-base,10%);
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Top Pane Common                                                             *
+ *                                                                             *
+ ******************************************************************************/
+
+.fx-calendar-toggleButton{
+	-fx-background-color: #FFFFFF;
+	-fx-background-insets: 0;
+    -fx-alignment: CENTER;
+    -fx-graphic-vpos: CENTER;
+    -fx-background-radius : 0;
+    -fx-border-radius : 0;
+    -fx-border-width : 0px;
+    -fx-cursor:hand;
+}
+
+.fx-calendar-toggleButton-txt{
+	-fx-fill: -fx-base;
+	-fx-font-size: 0.916667em;	
+ 	-fx-font-family: verdana,arial,helvetica,tahoma,sans-serif;
+}
+
+.fx-calendar-toggleButton:hover {
+    -fx-background-color: derive(-fx-base,150%);
+}
+
+.fx-calendar-toggleButton:disabled {
+    -fx-background-color: linear-gradient(to bottom, derive(-fx-base,140%) 0%,  derive(-fx-base,120%) 100%);
+	-fx-border-width : 1px;
+    -fx-border-color: derive(-fx-base,20%);
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Top Month Pane                                                              *
+ *                                                                             *
+ ******************************************************************************/
+
+.fx-calendar-top-monthpane{
+	-fx-background-color: white;
+	-fx-border-width: 0.043333em 0.0em 0.043333em 0.043333em;
+	-fx-border-color: derive(-fx-base,10%) derive(-fx-base,10%) derive(-fx-base,10%) derive(-fx-base,10%);
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Top Year Pane                                                               *
+ *                                                                             *
+ ******************************************************************************/
+
+.fx-calendar-top-yearpane{
+	-fx-background-color: white;
+	-fx-border-width: 0.043333em 0.043333em 0.043333em 0.043333em;
+	-fx-border-color: derive(-fx-base,10%) derive(-fx-base,10%) derive(-fx-base,10%) derive(-fx-base,10%);
+}
+
+.fx-calendar-year-navigator-btn{
+	-fx-fill: linear-gradient(to bottom, derive(-fx-base,160%) 0%,  derive(-fx-base,140%) 100%);
+	-fx-stroke-width: 0.043333em 0.043333em 0.0em 0.043333em;
+	-fx-stroke: derive(-fx-base,10%);
+	-fx-arc-height:3.5;
+	-fx-arc-width:3.5;
+}
+.fx-calendar-year-navigator-btnGrp {
+	-fx-opacity:.8;
+	-fx-cursor:hand;
+}
+
+.fx-calendar-year-navigator-btnGrp:hover {
+	-fx-opacity:1;
+}
+

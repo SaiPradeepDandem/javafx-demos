@@ -1,0 +1,31 @@
+.domino {
+    -fx-skin    : "com.ezest.javafx.components.dominoclock.DominoSkin";
+    -fx-on-color: rgb(251, 251, 251)
+}
+
+.domino-frame {
+    -fx-fill  : linear-gradient(from 50% 0% to 50% 100%, rgb(57, 57, 57) 0%, rgb(22, 22, 22) 100%);
+    -fx-stroke: transparent;
+}
+
+.domino-main {
+    -fx-fill  : linear-gradient(from 53% 0% to 53% 99%, rgb(55, 55, 55) 0%, rgb(24, 24, 24) 98%, rgb(24, 24, 24) 100%);
+    -fx-stroke: transparent;
+}
+
+.domino-separator {
+    -fx-fill  : linear-gradient(from 50% 0% to 50% 100%, rgb(27, 27, 27) 0%, rgb(55, 55, 55) 100%);
+    -fx-stroke: transparent;
+}
+
+.domino-dot-off {
+    -fx-fill  : rgb(31, 31, 31);
+    -fx-stroke: transparent;
+    -fx-effect: innershadow(gaussian, rgba(255, 255, 255, 0.25), 2, 0.0, 0, -1);
+}
+
+.domino-dot-on {
+    -fx-fill  : linear-gradient(from 50% 0% to 50% 100%, derive(-fx-on-color, -25%) 0%, -fx-on-color 100%);
+    -fx-stroke: transparent;
+    -fx-effect: innershadow(gaussian, rgba(0, 0, 0, 0.65), 3, 0.0, 0, 1);
+}

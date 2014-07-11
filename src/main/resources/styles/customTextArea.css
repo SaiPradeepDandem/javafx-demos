@@ -1,0 +1,4 @@
+.custom-text-area, .custom-text-area:focused{
+	-fx-background-color:white;
+	-fx-background-insets:0;
+}

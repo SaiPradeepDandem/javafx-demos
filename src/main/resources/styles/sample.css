@@ -1,0 +1,229 @@
+.tab {
+    -fx-padding: 10px 20px 10px 20px; 
+     -fx-effect: null !important;
+}
+.tab:top {
+    -fx-background-color: transparent,-fx-tab-border-color, -fx-inner-border, linear-gradient(to bottom, yellow 20%, white);
+    -fx-background-insets: 0, 4 4 0 4, 5 5 0 5, 6 6 0 6 !important;
+    -fx-background-radius: 0, 5 5 0 0, 5 5 0 0, 5 5 0 0 !important;
+    -fx-effect: null !important;
+}
+.tab:selected {
+	-fx-background-color: transparent,-fx-tab-border-color, -fx-inner-border, linear-gradient(to bottom, red 20%, white);
+    -fx-background-insets: 0, 4 4 0 4, 5 5 0 5, 6 6 0 6 !important;
+    -fx-background-radius: 5 5 0 0 !important;
+    -fx-effect: null !important;
+}
+.tab-pane *.tab-header-background {
+    -fx-background-color: white;
+    -fx-effect: null !important;
+}
+.tab-pane:top *.tab-header-area {
+	-fx-background-color: white;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 5px 2px 0px 10px;
+}
+
+
+
+
+
+
+
+/*.scene{
+    -fx-font: 14pt "Cambria Bold";
+    -fx-color: #e79423;
+    -fx-background: #C0C0C0;
+}
+ 
+.button{
+    -fx-text-fill: #006464;
+    -fx-background-color: #e79423;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-padding: 5;
+}*/
+
+.myTable:focused {
+    -fx-background-color: -fx-box-border, -fx-control-inner-background;
+    -fx-background-insets: 0,1;
+	-fx-background-radius: 0;
+}
+
+.my-choice-box {
+	-fx-background-color:red; 
+	-fx-text-fill: goldenrod;
+}
+	
+#choice-box-popup-menu{
+ -fx-background-color:red; 
+}
+
+#choice-box-menu-item{
+  -fx-text-fill: goldenrod;
+}
+
+.my-choice-box .context-menu {
+    -fx-background-color:green; 
+    -fx-text-fill: goldenrod;
+}
+
+.my-choice-box .menu-item {
+    -fx-background-color:green; 
+    -fx-text-fill: goldenrod;
+}
+
+.myTable .table-cell{
+	-fx-border-width: 0px; 
+}
+.myTable .table-row-cell, .myTable .table-row-cell:odd {
+	-fx-background-color: #FFFFFF;
+    -fx-background-insets: 0;
+}
+.myTable .table-row-cell:empty {
+    -fx-background-color: yellow;
+}
+ 
+.myTable .table-row-cell:empty .table-cell {
+    -fx-border-width: 0px;
+}
+
+.emrHeaderLbl{
+	-fx-font-size: 22 ;
+	-fx-font-weight: bold ;
+	-fx-font-family: arial ;
+	-fx-font-style: italic ;
+	-fx-text-fill:#5297c6;
+	
+}
+.emrHeaderTxt{
+	-fx-font-size: 22 ;
+	-fx-font-weight: bold ;
+	-fx-font-family: arial ;
+	-fx-font-style: italic ;
+	-fx-fill:#5297c6;
+}
+
+.taskbar {
+	-fx-background-color:white;
+}
+
+.memoTitle{
+	-fx-font-weight:bold;
+}
+
+.deleteButton{
+	-fx-background-image: url("../images/delete.png");
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center center;
+	-fx-background-color: null;
+    -fx-background-radius: 5, 5, 4, 3;
+    -fx-padding: 5 10 5 10;
+}
+
+.deleteButton:hover {
+	-fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-color: -fx-hover-base;
+    -fx-cursor: hand;
+    -fx-border-style: segments(0.166667em, 0.166667em);
+    -fx-border-width: 0.083333em; /* 1 */
+}
+
+.popUp{
+	-fx-background-radius: 8, 8, 8, 8;
+	-fx-border-radius: 8, 8, 8, 8;
+	-fx-background-color: #FF0000,-fx-box-border;
+	-fx-border-color:#0000FF;
+}
+
+.mainStage{
+	-fx-background-radius: 8, 8, 8, 8;
+	-fx-border-radius: 8, 8, 8, 8;
+	-fx-background-color: #336699;
+	-fx-border-color: #6e737d , rgba(255,255,255,0.3);
+    -fx-border-insets: 0,1;
+	-fx-border-width:2px;
+	-fx-padding:5px;
+}
+
+#window-close {
+    -fx-font-size: 1px;
+    -fx-background-color: null;
+    -fx-background-image: url("../images/window-close1.png");
+    -fx-padding: 6 6 4 6;
+}
+#window-min {
+    -fx-font-size: 1px;
+    -fx-background-color: null;
+    -fx-background-image: url("../images/window-min.png");
+    -fx-padding: 6 6 4 6;
+}
+#window-max {
+    -fx-font-size: 1px;
+    -fx-background-color: null;
+    -fx-background-image: url("../images/window-expand.png");
+    -fx-padding: 6 6 4 6;
+}
+#window-close:hover {
+    -fx-background-image: url("../images/window-close-over1.png");
+}
+#window-min:hover {
+    -fx-background-image: url("../images/window-min-over.png");
+}
+#window-max:hover {
+    -fx-background-image: url("../images/window-expand-over.png");
+}
+
+#window-resize-button {
+    -fx-background-image: url("../images/window-corner.png");
+    -fx-background-position: right 1px bottom 1px;
+    -fx-background-repeat: no-repeat;
+}
+
+.my-field {
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 1 3 1 3;
+    -fx-background-radius: 0;
+}
+
+.my-field:focused {
+    -fx-background-color: #FFFFFF;
+}
+
+.dateInput{
+	-fx-background-radius: 0px 4px 0px 0px;
+	-fx-background-insets: 0, 1;
+	-fx-background-color:#C0C0C0, linear (0%,0%) to (0%,100%) stops (0%, derive(#C0C0C0,70%)) (25%, derive(#C0C0C0,50%)) (50%, derive(#C0C0C0,30%)) (98%, derive(#C0C0C0,10%)) (100%, derive(#C0C0C0,-5%)); 
+}
+.imgStyle{
+	-fx-background-color: #FFFFFF;
+	-fx-background-radius: 2 2 0 0;
+	-fx-border-radius: 2 2 0 0;
+	-fx-border-color: #7792B7; 
+    -fx-border-width: 0.166667em 0.062222em 0.062222em 0.062222em; 
+    -fx-cursor:hand;
+}
+.imgLine{
+	-fx-stroke: #C0C0C0;
+    -fx-stroke-width: 0.062222em;
+}
+
+.myCustomFontLabel { 
+	-fx-font: 22 "Bleeding Cowboys"; 
+}
+
+.myMenuItem:focused {
+     -fx-background: red;
+     -fx-background-color: red;
+     -fx-text-fill: gray;
+}
+
+.myMenuItem:focused .label {
+    -fx-text-fill: blue;
+}
+
+/* MultiLineTableCellDemo.java */
+.emptyRowTableView .table-cell:odd:empty {
+    -fx-background-color: white;
+}
+

@@ -1,0 +1,12 @@
+.autoSuggest, .autoSuggest:focused{
+	-fx-padding: 0 5 0 5;
+	-fx-background-color: -fx-text-box-border, -fx-control-inner-background;
+    -fx-background-insets: 0, 1 0 1 1;
+    -fx-background-radius:3 0 0 3;
+}
+
+.combo-focused {
+    -fx-background-color: -fx-focus-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-radius: 6.4, 4, 5, 3;
+    -fx-background-insets: -1.4, 0, 1, 2;
+}

@@ -1,0 +1,23 @@
+.last-table-cell {
+     -fx-border-color: transparent;
+}
+.table-view .table-cell:last-visible {
+    -fx-border-color: transparent;
+}
+
+.my-column {
+    -fx-border-color: red;
+    -fx-background-color: yellow;
+}
+.my-column1 {
+    -fx-border-color: blue;
+    -fx-background-color: green;
+}
+.my-column2 {
+    -fx-border-color: orange;
+    -fx-background-color:  gold;
+}
+.column-drag-header {
+    -fx-background-color: gold, red;
+    -fx-background-insets: 0, 1 0 0 1;
+}

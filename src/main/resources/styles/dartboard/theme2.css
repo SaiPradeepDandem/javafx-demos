@@ -1,0 +1,50 @@
+.root {
+    -fx-background-color: radial-gradient(center 50% 50%, radius 60%, reflect, royalblue, black );
+}
+ 
+.border-line {
+    -fx-stroke: white;
+    -fx-stroke-width: 3;
+    -fx-fill: null;
+}
+ 
+.bull-style {
+    -fx-stroke: blue;
+    -fx-stroke-type: inside;
+}
+ 
+.bulls-eye-style {
+    -fx-stroke: firebrick;
+    -fx-stroke-type: inside;
+}
+ 
+.text-surround {
+    -fx-fill: white;
+    -fx-font-family: Verdana;
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+}
+ 
+.double-triple-style-red {
+    -fx-fill: firebrick;
+    -fx-stroke: white;
+    -fx-stroke-width: 3;
+}
+ 
+.double-triple-style-green {
+    -fx-fill: blue;
+    -fx-stroke: white;
+    -fx-stroke-width: 3;
+}
+ 
+.field-style-dark {
+    -fx-fill: blue;
+    -fx-stroke: white;
+    -fx-stroke-width: 3;
+}
+ 
+.field-style-light {
+    -fx-fill: firebrick;
+    -fx-stroke: white;
+    -fx-stroke-width: 3;
+}

@@ -1,0 +1,160 @@
+.combo-prompt-text{
+	-fx-fill:yellow !important;
+}
+
+
+/* com.ezest.javafx.demogallery.tableviews.TableAutoSizeDemo.java */
+.myTable .table-row-cell {
+    -fx-background-color: yellow;
+    /* Enable the below line, if ther borders are required.*/
+    /* -fx-background-color: -fx-table-cell-border-color, yellow; */
+}
+.myTable .table-cell{
+	-fx-background-color: -fx-table-cell-border-color, -fx-control-inner-background;
+    -fx-background-insets: 0, 0 0 1 0;
+}
+.myTable .table-row-cell:odd  .table-cell{
+    -fx-background-color: -fx-table-cell-border-color, derive(-fx-control-inner-background,-5%);
+    -fx-background-insets: 0, 0 0 1 0;
+}
+
+.myTable .table-row-cell:focused  .table-cell{
+    -fx-background-color: -fx-focus-color, -fx-cell-focus-inner-border, -fx-control-inner-background;
+    -fx-background-insets: 0, 1, 2;
+}
+
+.myTable .table-row-cell:focused:odd  .table-cell{
+    -fx-background-color: -fx-focus-color, -fx-cell-focus-inner-border, derive(-fx-control-inner-background,-5%);
+    -fx-background-insets: 0, 1, 2;
+}
+
+/* When the table-row-cell is selected and focused */
+.table-view:focused .table-row-cell:filled:focused:selected  .table-cell{
+    -fx-background-color: -fx-focus-color, -fx-cell-focus-inner-border, -fx-selection-bar;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background: -fx-accent;
+    -fx-text-fill: -fx-selection-bar-text;
+}
+
+
+/* com.ezest.javafx.sscce.FirstLastChildSelector.java */
+.custom-cell {
+    -fx-background-color: red;
+}
+.custom-cell:filled:hover {
+    -fx-background-color: yellow;
+    -fx-text-fill: -fx-text-inner-color;
+}
+.custom-cell:filled:selected{
+	-fx-background-color: blue;
+    -fx-text-fill: white;
+}
+
+.disabledTextField, .disabledTextField:disabled {
+    -fx-opacity: 1;
+    -fx-background-color: -fx-shadow-highlight-color, #7C7C7C, #F0F0F0;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 3, 2, 2;
+}
+.disabledTextArea, .disabledTextArea:disabled {
+    -fx-opacity: null;
+    -fx-background-color: -fx-shadow-highlight-color, #7C7C7C, #F0F0F0;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 3, 2, 2;
+    -fx-text-fill:black;
+}
+
+.disabledTextArea .content .text{
+    -fx-fill: red; 
+}
+
+.disabledTextArea .text-input:disabled {
+    -fx-text-fill: blue;
+    -fx-opacity: null;
+}
+
+
+.check{
+	-fx-background-color:white;	
+}
+
+.separator .line {
+    -fx-border-style: solid;
+    -fx-border-width: 0.083333em; /* 1 */
+}
+.list-cell {
+    -fx-padding: 0; 
+}
+
+.tooltip {
+	-fx-background-radius: 0 0 0 0;
+}
+.page-corner {
+    -fx-padding: 4.5 4.5 4.5 4.5;
+    -fx-background-color: transparent;
+    -fx-shape: "M0,0H9L0,9Z";
+    -fx-effect:null;
+}
+
+
+
+.myListColumn {
+    -fx-background-color: -fx-body-color;
+    -fx-border-color: #919191;
+    -fx-border-width: 0.083333em 0.083333em 0.0em 0.083333em; /* 0 0 2 0 */
+    -fx-padding: 0;
+}
+
+.list-view {
+    -fx-skin: "com.sun.javafx.scene.control.skin.ListViewSkin";
+    -fx-background-color: -fx-box-border, -fx-control-inner-background;
+    -fx-background-insets: 0, 1;
+    -fx-padding: 1; /* 0.083333em; */
+}
+
+.list-view:focused {
+    -fx-background-color: -fx-box-border, -fx-control-inner-background;
+    -fx-background-insets: 0, 1;
+}
+
+
+.borderCheck1{
+	-fx-border-color:red;
+	-fx-border-width:1px;
+	-fx-border-style:solid;	
+}
+.borderCheck2{
+	-fx-border-color:green;
+	-fx-border-width:2px;
+	-fx-border-style:solid;	
+}
+.borderCheck3{
+	-fx-border-color:blue;
+	-fx-border-width:1px;
+	-fx-border-style:solid;	
+}
+
+.fieldSet{
+	-fx-border-color:#444444;
+	-fx-border-width:2px;
+	-fx-border-style:solid;	
+}
+.fieldSetDefault{
+	-fx-border-color:transparent;
+	-fx-border-radius:5px;
+	-fx-border-width:2px;
+	-fx-border-style:solid;	
+}
+.fieldSetRed{
+	-fx-border-color:red;
+	-fx-border-radius:5px;
+	-fx-border-width:2px;
+	-fx-border-style:solid;	
+}
+.fieldSetGreen{
+	-fx-border-color:green;
+	-fx-border-radius:5px;
+	-fx-border-width:2px;
+	-fx-border-style:solid;	
+}
+

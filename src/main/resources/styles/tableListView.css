@@ -1,0 +1,25 @@
+.tableHeaderListSeparator .line {
+    -fx-border-style: solid;
+    -fx-border-width: 0.083333em; /* 1 */
+}
+.tableHeaderListView .list-cell {
+    -fx-padding: 0; 
+}
+
+.tableListHeader {
+    -fx-background-color: -fx-body-color;
+    -fx-border-color: #919191;
+    -fx-border-width: 0.083333em 0.083333em 0.0em 0.083333em; /* 0 0 2 0 */
+    -fx-padding: 0;
+    -fx-node-hpos: center ;
+    -fx-node-vpos: center ;
+}
+
+.tableListHeaderLbl{
+	-fx-font-size:12;	
+}
+
+.tableHeaderListView:focused {
+    -fx-background-color: -fx-box-border, -fx-control-inner-background;
+    -fx-background-insets: 0, 1;
+}

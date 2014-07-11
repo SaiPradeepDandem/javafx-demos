@@ -1,0 +1,34 @@
+.graphic-toggle-button {
+	-fx-background-color: transparent;
+	-fx-background-insets: 0;
+	-fx-background-radius: 0;
+	-fx-graphic-text-gap:12px;
+}
+
+.graphic-toggle-button:focused {
+	-fx-color: -fx-focused-base;
+	-fx-background-color: transparent;
+	-fx-background-insets: 0;
+	-fx-background-radius: 0;
+}
+
+.graphic-toggle-button:selected {
+	-fx-background-color: transparent;
+	-fx-background-insets: 0;
+	-fx-text-fill: -fx-text-base-color;
+}
+
+.graphic-toggle-button:selected:focused {
+	-fx-color: -fx-focused-base;
+	-fx-text-fill: -fx-text-base-color;
+	-fx-background-color: transparent;
+	-fx-background-insets: 0;
+}
+
+.graphic-toggle-button:selected .yellowEffect{
+	-fx-effect: dropshadow( three-pass-box , #D9D900 , 15, 0.0 , 0 , 0 );
+}
+
+.graphic-toggle-button:selected .redEffect{
+	-fx-effect: dropshadow( three-pass-box , #5FD095 , 15, 0.0 , 0 , 0 );
+}

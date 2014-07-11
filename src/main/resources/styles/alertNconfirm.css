@@ -1,0 +1,65 @@
+.popUpStage{
+	-fx-background-radius: 8, 8, 8, 8;
+	-fx-border-radius: 8, 8, 8, 8;
+	-fx-background-color: #D0D0D0;
+	-fx-border-color: #6e737d;
+    -fx-border-insets: 0;
+	-fx-border-width:2px;
+	-fx-effect: dropshadow( three-pass-box , gray , 8, 0.0 , 4 , 4 );
+}
+
+#window-close {
+	-fx-font-size: 1px;
+    -fx-background-color: null;
+    -fx-background-image: url("../images/window-close.png");
+    -fx-padding: 6 6 4 6;
+    -fx-cursor:hand;
+}
+
+#window-close:hover {
+    -fx-background-image: url("../images/window-close-over.png");
+}
+
+.popUpHeader{
+	-fx-background-color: #808080;
+	-fx-background-radius:8 8 0 0;
+	-fx-background-insets:1;
+	-fx-border-width:0 0 1 0;
+	-fx-border-color:#6e737d , rgba(255,255,255,0.3);
+	-fx-border-insets:0,1;
+	-fx-cursor:move;
+}
+
+.popUpHeaderLbl{
+	-fx-font-size: 14 ;
+	-fx-font-weight: bold ;
+	-fx-font-family: arial ;
+	-fx-text-fill:#F8F8F8;
+}
+
+.popUpBody{
+	-fx-background-color: #F8F8F8;
+}
+
+.popUpActionBox{
+	-fx-background-color: #F8F8F8;
+	-fx-background-radius:0 0 8 8;
+}
+
+
+/*    UNWANTED CSS               */
+.borderCheck1{
+	-fx-border-color:red;
+	-fx-border-width:1px;
+	-fx-border-style:solid;	
+}
+.borderCheck2{
+	-fx-border-color:green;
+	-fx-border-width:1px;
+	-fx-border-style:solid;	
+}
+.borderCheck3{
+	-fx-border-color:blue;
+	-fx-border-width:1px;
+	-fx-border-style:solid;	
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset=utf-8>
+<title>Hello Java-Buddy!</title>
+  
+  <style>
+  .buttonBG{
+  	background-color:red;
+  }
+  </style>
+<script>
+ 
+function updateHello(user){
+  document.getElementById("helloprompt").innerHTML="Hello: " + user;
+}
+  
+function clearHello(user){
+  document.getElementById("helloprompt").innerHTML="Hello <a href='http://java-buddy.blogspot.com/'>Java-Buddy</a>";
+}
+ 
+function callJavaFX(){
+    var msg = document.getElementById("textto").value;
+    app.callFromJavascript(msg);
+}
+</script>
+  
+</head>
+<body>
+<img src="http://2.bp.blogspot.com/-Ol8pLJcc9oo/TnZY6R8YJ5I/AAAAAAAACSI/YDxcIHCZhy4/s150/duke_44x80.png"/>
+<p id="helloprompt">Hello <a href="http://java-buddy.blogspot.com/">Java-Buddy</a></p>
+<p><textarea id="textto"> </textarea></p>
+<p><input type="button" value="Click to send message to Javascript" onclick="callJavaFX()"></p>
+<p><input id="BtnAttach" class="buttonBG" type="button" value="Check" style="background-color:Transparent;" /></p>
+</body>
+</html>

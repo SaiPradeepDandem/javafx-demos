@@ -1,0 +1,106 @@
+.mainStage{
+	-fx-background-radius: 8, 8, 8, 8;
+	-fx-border-radius: 8, 8, 8, 8;
+	-fx-background-color: #336699;
+	-fx-padding:5px;
+}
+
+.custom-node1 {
+    -fx-background-color: skyblue; /* set background to skyblue */
+    -fx-border-color: red; /* set border to red*/
+    -fx-border-width: 2; /* border width 3px */
+}
+
+.custom-node2 {
+	/* negative % indicates darker
+	   positive % indicates brighter */
+    -fx-background-color: skyblue, derive(skyblue, 25%), derive(skyblue, 50%), derive(skyblue, 75%); 
+	-fx-background-insets: 20, 40, 60, 80;
+    -fx-border-color: red; /* set border to red*/
+    -fx-border-width: 2; /* border width 3px */
+}
+
+.custom-node3 {
+	-fx-background-color: skyblue, derive(skyblue, 25%), derive(skyblue, 50%), derive(skyblue, 75%); 
+	-fx-background-insets: 20, 40, 60, 80;
+    -fx-border-color: red, black, yellow, green, blue; 
+	-fx-border-insets: 0, 20, 40, 60, 80;
+	/* If no of border-color's and border-inset's are in sync, the result will be effective.*/
+	-fx-border-width: 2; 
+}
+
+.custom-node4 {
+    -fx-background-color: skyblue, derive(skyblue, 25%), derive(skyblue, 50%), derive(skyblue, 75%); /* set background to skyblue */
+    -fx-background-insets: 15, 30, 45, 60;
+    -fx-background-radius: 15 0 0 0, 0 15 0 0, 0 0 15 0, 0 0 0 15;
+    -fx-border-color: red, black, yellow, green, blue; /* set border to red*/
+    -fx-border-insets: 0, 15, 30, 45, 60;
+    -fx-border-radius: 0, 15 0 0 0, 0 15 0 0, 0 0 15 0, 0 0 0 15;
+    -fx-border-width: 2; 
+}
+
+.custom-node5 {
+    -fx-background-color: skyblue, derive(skyblue, 25%), derive(skyblue, 50%), derive(skyblue, 75%); /* set background to skyblue */
+    -fx-background-insets: 15, 30, 45, 60;
+    /* The four parts in a group decides the four sides: top-right-bottom-left. */
+    -fx-border-color: red, black transparent black transparent, yellow, transparent green transparent green, blue transparent blue transparent; /* set border to red*/
+    -fx-border-insets: 0, 15, 30, 45, 60;
+    -fx-border-width: 2; 
+}
+
+.custom-node6 {
+    -fx-background-color: skyblue, derive(skyblue, 25%), derive(skyblue, 50%), derive(skyblue, 75%); /* set background to skyblue */
+    -fx-background-insets: 15, 30 30 15 30, 30 45 45 45, 60 60 45 60;
+    -fx-border-color: red, black, yellow yellow transparent yellow, transparent green green green, blue blue transparent blue;
+    -fx-border-insets: 0, 15, 30 30 15 30, 30 45 45 45, 60 60 45 60;
+    -fx-border-width: 2; 
+}
+
+.custom-node7 {
+    -fx-background-color: skyblue, derive(skyblue, 25%), derive(skyblue, 50%), derive(skyblue, 75%); /* set background to skyblue */
+    -fx-background-insets: 0, 60, 80, 100;
+    -fx-background-radius: 20.0em, 0, 0, 0; /* 1.0em == 12 px*/ /* 20.0em == 240px*/
+    -fx-border-color: red, yellow, green, blue;
+    -fx-border-insets: 0, 60, 80, 100;
+    -fx-border-radius: 20.0em, 0, 0, 0;
+    -fx-border-width: 2; 
+}
+
+.custom-node8 {
+    -fx-background-color: skyblue, derive(skyblue, 25%); 
+    -fx-background-insets: 0, 20;
+    -fx-background-radius: 10, 0;
+    -fx-border-color: blue, red;
+    -fx-border-style: segments(40, 4, 20, 4) phase 12 line-cap butt, segments(26, 4, 26, 4) phase 4 line-cap round;
+    -fx-border-insets: 0, 20 22 20 22;
+    -fx-border-radius: 10, 0;
+    -fx-border-width: 3, 3 0 3 0;
+}
+.custom-node9 {
+    -fx-background-color: black, grey;
+    -fx-background-insets: 0, 50 0 0 0;
+    -fx-background-radius: 10, 0 0 10 10;
+    -fx-border-color: red /*, derive(red, 50%) derive(red, 20%) derive(red, 20%) derive(red, 50%) , derive(red, 100%) derive(red, 40%) derive(red, 40%) derive(red, 100%), transparent derive(red, 65%) derive(red, 65%) transparent , transparent derive(red, 80%) derive(red, 80%) transparent, transparent derive(red, 100%) derive(red, 100%) transparent*/;
+    /*-fx-border-insets: 0,-1,-2,-3,-4,-5; 
+    -fx-border-opacity: 0.5; 
+    -fx-border-width: 1;*/ 
+    -fx-border-radius: 10/*,10,10,15 15 10 15, 15 15 10 15, 18 18 10 18*/;
+    -fx-effect: dropshadow( three-pass-box , red , 10, 0.2 , 0 , 0 );
+    
+    /**
+    	dropshadow( <blur-type> , <color> , <number> , <number> , <number> , <number> )
+    
+		<blur-type> = [	gaussian | one-pass-box | three-pass-box | two-pass-box ]
+		<color> The shadow Color.
+		<number> The radius of the shadow blur kernel. In the range [0.0 ... 127.0], typical value 10.
+		<number> The spread of the shadow. The spread is the portion of the radius where the contribution of the source material will be 100%. The remaining portion of the radius will have a contribution controlled by the blur kernel. A spread of 0.0 will result in a distribution of the shadow determined entirely by the blur algorithm. A spread of 1.0 will result in a solid growth outward of the source material opacity to the limit of the radius with a very sharp cutoff to transparency at the radius. Values should be in the range [0.0 ... 1.0].
+		<number> The shadow offset in the x direction, in pixels. 
+		<number> The shadow offset in the y direction, in pixels.
+    */
+}
+
+
+
+
+
+

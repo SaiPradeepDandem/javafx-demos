@@ -1,0 +1,50 @@
+.lockingTableSkinBG{
+	-fx-background-color:white;
+}
+
+.lockedPane{
+	-fx-border-width:0px 1.5px 0px 0px;	
+	-fx-border-style:solid;
+	-fx-border-color:#C0C0C0;
+}
+
+.locktable-cell{
+	-fx-padding: 0.166667em; /* 2px, plus border adds 1px */
+    -fx-background-color: transparent;
+    -fx-border-color: transparent #bbbbbb transparent transparent;
+    -fx-border-width: 0.083333em; /* 1 */
+}
+
+.locktable-cell-last{
+	-fx-border-color: transparent;
+}
+
+.locktable-row-cell{
+	-fx-background-color: #bbbbbb, -fx-control-inner-background;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+    -fx-text-fill: -fx-text-inner-color;
+}
+
+.locktable-row-cell-odd{
+	-fx-background-color: #bbbbbb, derive(-fx-control-inner-background,-5%);
+    -fx-background-insets: 0, 0 0 1 0;
+}
+
+.locktable-headerrow-cell{
+	-fx-font-size: 12px; 
+    -fx-background-color: #959595, -fx-body-color;
+    -fx-background-insets: 0.0em, 0.0em 0.0em 0.083333em 0.0em;
+    -fx-padding: 0;
+}
+
+.vertical-scroll-pane {
+    -fx-background-color: -fx-background;
+    -fx-background-insets: 0;
+    -fx-padding: 0.0;
+}
+
+.vertical-scroll-pane:focused {
+    -fx-background-color: -fx-background;
+    -fx-background-insets: 0;
+}
